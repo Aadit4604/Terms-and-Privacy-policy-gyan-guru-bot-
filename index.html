@@ -3,13 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>Gyan Guru Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111;
+      --card: #f3f3f3;
+      --btn: #4f46e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --text: #e5e7eb;
+        --card: #1e293b;
+        --btn: #6366f1;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .box {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 14px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+    }
+    h1 { margin-top: 0; }
+    a {
+      display: block;
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 10px;
+      background: var(--btn);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { opacity: 0.9; }
+    footer {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+  </style>
 </head>
-<body style="font-family: system-ui; padding: 20px; max-width: 800px; margin: auto;">
-  <h1>Gyan Guru Bot</h1>
-  <p>An AI-powered study assistant for students.</p>
-  <ul>
-    <li><a href="terms.html">Terms of Service</a></li>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-  </ul>
+<body>
+  <div class="box">
+    <h1>Gyan Guru Bot</h1>
+    <p>An AI-powered study assistant for students.</p>
+
+    <a href="terms.html">📄 Terms of Service</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+
+    <footer>
+      © 2025 Gyan Guru Bot
+    </footer>
+  </div>
 </body>
 </html>
